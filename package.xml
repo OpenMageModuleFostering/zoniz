@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Zoniz</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>GNU General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Zoniz Magento Extensions link products in Magento stores to Zoniz Social Media Marketing Platform. </summary>
+    <description>Once the stores are connected you can see your shop products directly in Zoniz and you can choose products to promote to social networks automatically. &#xD;
+&#xD;
+The current extensions install a website toolbar over your shop, where the content of the toolbar can be controlled from Zoniz Social Media Platform. You can push updates, run social media promotions directly to your website. </description>
+    <notes>Once the stores are connected you can see your shop products directly in Zoniz and you can choose products to promote to social networks automatically. &#xD;
+&#xD;
+The current extensions install a website toolbar over your shop, where the content of the toolbar can be controlled from Zoniz Social Media Platform. You can push updates, run social media promotions directly to your website. </notes>
+    <authors><author><name>paul</name><user>paul</user><email>paul@zoniz.com</email></author></authors>
+    <date>2013-07-09</date>
+    <time>17:57:57</time>
+    <contents><target name="magelocal"><dir name="app"><dir name="design"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="bar.xml" hash=""/></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="bar_layout.xml" hash=""/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Zoniz_Bar.xml" hash=""/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

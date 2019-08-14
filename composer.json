@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Zoniz",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License",
+    "homepage": "",
+    "description": "Zoniz Magento Extensions link products in Magento stores to Zoniz Social Media Marketing Platform. ",
+    "authors": [
+    {
+        "name": "paul",
+        "email": "paul@zoniz.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
