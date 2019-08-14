@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Zoniz</name>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <stability>stable</stability>
     <license>GNU General Public License</license>
     <channel>community</channel>
@@ -15,8 +15,8 @@ The current extensions install a website toolbar over your shop, where the conte
 The current extensions install a website toolbar over your shop, where the content of the toolbar can be controlled from Zoniz Social Media Platform. You can push updates, run social media promotions directly to your website. </notes>
     <authors><author><name>paul</name><user>paul</user><email>paul@zoniz.com</email></author></authors>
     <date>2013-07-09</date>
-    <time>17:57:57</time>
-    <contents><target name="magelocal"><dir name="app"><dir name="design"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="bar.xml" hash=""/></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="bar_layout.xml" hash=""/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Zoniz_Bar.xml" hash=""/></dir></dir></dir></target></contents>
+    <time>21:59:54</time>
+    <contents><target name="magelocal"><dir name="Zoniz"><dir name="Bar"><dir name="Block"><file name="Footer.php" hash="0b7767379201e5353e23b41fb870de60"/></dir><dir name="Helper"><file name="Data.php" hash="36c4731bb8621f8cbbcf8cb69cbc3a28"/></dir><dir name="Model"><file name="Bar.php" hash="08672ea64197fe2564c2243b24958515"/><dir name="Mysql4"><dir name="Bar"><file name="Collection.php" hash="bbaf376d4ab036cfd389daf5bac8ae61"/></dir><file name="Bar.php" hash="65d63b43e16abe706129c1036b5b6abe"/></dir><dir name="Resource"><file name="Setup.php" hash="75a76602b74fa88ea28fb894d9c445c4"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="WebController.php" hash="ee4056464b1b3ad23c7204b4feacc269"/></dir><file name="IndexController.php" hash="97f5c602c4b3c1b11e6ff4ce874ead5c"/></dir><dir name="etc"><file name="config.xml" hash="9d12cb34cf52a273ace39250bf2d456d"/><file name="config.xml~" hash="b2d9d296527bce363193acbb0e2c2783"/></dir><dir name="sql"><dir name="bar_setup"><file name="mysql4-install-0.1.0.php" hash="c89f8521794f64105c8cf5230d88578a"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="bar.xml" hash="3dabf32085abfb8ca7744f81438d017f"/></dir><dir name="template"><dir name="bar"><file name="web.phtml" hash="682b0c70d856aca361448d719309ecae"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="bar_layout.xml" hash="11f0c662a70f1beb9461e00ecafe847b"/></dir><dir name="template"><dir name="bar"><file name="webcode.phtml" hash="224269235ae77b08e543c5436fdfbc0c"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Zoniz_Bar.xml" hash="2e71473c816601b3156f5bba240bc178"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

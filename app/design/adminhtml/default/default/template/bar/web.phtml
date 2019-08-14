@@ -1,0 +1,31 @@
+<div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3><?=$this->__('Account Details')?></h3></td>
+            <td class="a-right">
+                <button onclick="editForm.submit()" class="scalable save" type="button"><span>Submit</span></button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="entry-edit">
+    <form id="edit_form" name="edit_form" method="post" action="<?=$this->getUrl('*/*/post')?>">
+        <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+        <h4 class="icon-head head-edit-form fieldset-legend"><?=$this->__('Enter account name/id and stream name/id')?></h4>
+        <fieldset id="my-fieldset">
+            <table cellspacing="0" class="form-list">
+                <tr>
+                    <td class="label"><?=$this->__('Account Name')?> <span class="required">*</span></td>
+                    <td class="input-ele"><input style="/*width:180px;*/" class="input-text required-entry" name="account_name" value="<?=$this->getData('account_name')?>"/></td>
+                </tr>
+				<tr>
+                    <td class="label"><?=$this->__('Stream Name')?> <span class="required">*</span></td>
+                    <td class="input-ele"><input  style="/*width:180px;*/" class="input-text required-entry" name="stream_name" value="<?=$this->getData('stream_name')?>"/></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    var editForm = new varienForm('edit_form');
+</script>

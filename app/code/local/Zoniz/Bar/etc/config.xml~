@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Zoniz_Bar>
+            <version>0.1.0</version>
+        </Zoniz_Bar>
+    </modules>
+    
+    <global>
+        <models>
+            <bar>
+                <class>Zoniz_Bar_Model</class>
+                <resourceModel>bar_mysql4</resourceModel>
+            </bar>
+            <bar_mysql4>
+                <class>Zoniz_Bar_Model_Mysql4</class>
+                <entities>
+                    <bar>
+                        <table>zoniz_acc</table>
+                    </bar>
+                </entities>
+            </bar_mysql4>
+        </models>
+        <blocks>
+            <zoniz_bar>
+                <class>Zoniz_Bar_Block</class>
+            </zoniz_bar>
+        </blocks>
+        <helpers>
+            <bar>
+                <class>Zoniz_Bar_Helper</class>
+            </bar>  
+        </helpers>
+        <resources>
+           <bar_setup>
+               <setup>
+                   <module>Zoniz_Bar</module>
+                   <class>Zoniz_Bar_Model_Resource_Setup</class>
+               </setup>
+               <connection>
+                   <use>core_setup</use>
+               </connection>
+           </bar_setup>
+           <bar_write>
+               <connection>
+                   <use>core_write</use>
+               </connection>
+           </bar_write>
+           <bar_read>
+               <connection>
+                   <use>core_read</use>
+               </connection>
+           </bar_read>
+       </resources>
+    </global>
+    
+    <admin>
+        <routers>
+            <bar>
+                <use>admin</use>
+                <args>
+                    <module>Zoniz_Bar</module>
+                    <frontName>bar</frontName>
+                </args>
+            </bar>
+        </routers>
+    </admin>
+    
+    <frontend>
+        <layout>
+        		<updates>
+                <zoniz_bar module="Zoniz_Bar">
+                    <file>bar_layout.xml</file>
+                </zoniz_bar>
+                
+            </updates>
+        </layout>
+    </frontend>     
+    
+    <adminhtml>
+        <menu>
+            <system>
+                <children>
+                    <bar_adminform translate="title" module="bar">
+                        <title>Zoniz Account Details</title>
+                        <sort_order>200</sort_order>
+                        <action>bar/adminhtml_web</action>
+                    </bar_adminform>
+                </children>
+            </system>
+        </menu>
+        
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <bar_adminform>
+                                    <title>Zoniz Account Details</title>
+                                </bar_adminform>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        
+        <layout>
+            <updates>
+                <bar>
+                    <file>bar.xml</file>
+                </bar>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

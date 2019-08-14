@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <bar_adminhtml_web_index>
+        <update handle="bar_web_index"/>
+        <reference name="content">
+            <block type="adminhtml/template" name="web" template="bar/web.phtml"/>
+        </reference>
+    </bar_adminhtml_web_index>
+</layout>
